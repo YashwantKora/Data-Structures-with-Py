@@ -5,7 +5,7 @@
 #         Compare the current element with the next one.
 #         If the current element is greater than the next one, swap them.
 
-# If no swaps were made in a full pass, the array is sorted.
+# If no swaps were made, the array is sorted.
 # End when the array is sorted.
 
 def BubbleSort(data):
@@ -14,8 +14,6 @@ def BubbleSort(data):
         for j in range(n -i -1):
             if data[j] > data[j + 1]:
                 data[j], data[j + 1] = data[j + 1], data[j]
-
-
 
 array = [3,5,1,2,6,4,7,9,8]
 BubbleSort(array)
