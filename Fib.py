@@ -1,3 +1,9 @@
+# Start with two initial numbers: 0 and 1.
+# Repeat for the desired number of terms:
+#     Add the two previous numbers to get the next number in the series.
+#     Update the two previous numbers to the last two numbers in the series.
+# End when the series has the desired number of terms.
+
 def fib(n):
     a = 0
     b = 1
