@@ -1,3 +1,9 @@
+# Start with an array of numbers and a target value to find.
+# Repeat for each element in the array:
+#     Compare the current element with the target value.
+#     If the current element matches the target, return the index of the current element.
+# If the target value is not found in the array, return -1 (indicating the target is not present).
+
 import time
 import matplotlib.pyplot as plt
 import numpy as np

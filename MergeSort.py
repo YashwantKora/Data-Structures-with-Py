@@ -1,14 +1,10 @@
 # Start with an array of numbers.
 # If the array has more than one element:
-#     Divide the array into two halves.
-#     Recursively apply merge sort to each half.
-#     Merge the two sorted halves back together:
-#         Create two pointers to the two halves of the array.
-#         Compare the elements at the pointers.
-#         Add the smaller element to a new array and move the pointer of that half.
-#         Once one half is exhausted, append the remaining elements from the other half.
-#     Return the merged sorted array.
-# End when the array is fully sorted.
+#     Split the array into two halves.
+#     Recursively sort each half.
+#     Merge the two sorted halves:
+#         Compare elements from both halves and add the smaller one to the result.
+# End when the array is sorted.
 
 def MergeSort(data):
     if len(data) > 1:

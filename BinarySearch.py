@@ -1,12 +1,11 @@
-# Start with a sorted array of numbers and a target value to find.
-# Set two pointers: one at the start of the array and one at the end.
-# Repeat while the start pointer is less than or equal to the end pointer:
-#     Find the middle element of the array.
-#     Compare the middle element with the target value.
-#     If the middle element matches the target, return the index of the middle element.
-#     If the middle element is greater than the target, move the end pointer to one element before the middle.
-#     If the middle element is smaller than the target, move the start pointer to one element after the middle.
-# If the target value is not found, return -1 (indicating the target is not present).
+# Start with a sorted array and a target value.
+# Set two pointers: one at the start and one at the end of the array.
+# Repeat while the start pointer is not past the end pointer:
+#     Find the middle element.
+#     If the middle element is the target, return its index.
+#     If the target is smaller, move the end pointer left.
+#     If the target is larger, move the start pointer right.
+# If the target is not found, return -1.
 
 def BinarySearch(data, x, low, high):
     if high >= low:
