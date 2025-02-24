@@ -61,14 +61,6 @@ class LinknkedList:
         self.head = new_node
 
     def insert_at_end(self, new_data):
-        # new_node = Node(new_data)
-        # if self.head is None:
-        #     self.head = new_node
-        #     return
-        # last = self.head
-        # while last.next:
-        #     last = last.next
-        # last.next = new_node
         new_node = Node(new_data)
         if self.head is None:
             self.head = new_node
@@ -77,6 +69,14 @@ class LinknkedList:
         while last.next:
             last = last.next
         last.next = new_node
+
+    def insert_after_node(self, prev_node, new_data):
+        if prev_node is None:
+            print("previous node must be present in the LL")
+            return
+        new_node = Node(new_data)
+        new_node.next = prev_node.next
+        prev_node.next = new_node
 
     def delete_at_beginning(self):
         if self.head is None:
@@ -108,6 +108,7 @@ if __name__ == '__main__':
     LL.insert_at_beginning(10)
     LL.insert_at_beginning(20)
     LL.insert_at_end(30)
+    LL.insert_after_node(n1, 100)
     print("LL")
     LL.print()
     print("|")
