@@ -32,6 +32,8 @@
 #             print(temp.data)
 #             temp = temp.next
 
+# 
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -56,10 +58,9 @@ class LL:
             last = last.next
         last.next = new_node
 
-
     def delete_at_beginning(self):
         if self.head is None:
-            print("LL empty bro")
+            print("SLL IS EMPTY")
         else:
             self.head = self.head.next
 
