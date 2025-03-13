@@ -10,7 +10,7 @@ class Stack:
         return "\n".join(values)
     
     def push(self, value):
-        if self.top == self.max_size:
+        if self.top == self.max_size -1:
             print("STACK OVERFLOW!")
         else:
             self.list.append(value)
