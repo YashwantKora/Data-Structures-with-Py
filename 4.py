@@ -34,6 +34,6 @@ plt.ylabel('time')
 plt.title("LINEAR SEARCH TIME COMPLEXITY")
 plt.show()
 
-#      Time     Space 
+# Case   Time   Space 
 # Best:  O(1)   O(1)
 # Worst: O(n)	O(1)

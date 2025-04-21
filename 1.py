@@ -1,4 +1,4 @@
-#1. Implement an ADT with all its operations.  
+#1 Implement an ADT with all its operations
 
 class Date:
     def __init__(self):
@@ -14,3 +14,7 @@ date1.year = 2007
 print("Day:", date1.day)
 print("month:", date1.month)
 print("year:", date1.year)
+
+# Type	Complexity
+# Time	O(1)
+# Space	O(1)

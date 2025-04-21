@@ -14,5 +14,12 @@ data = [1,3,5,7,9,2,4,6,8,10,14,12,45,18,11]
 n = len(data)
 bubble_sort(data, n)
 print(data)
+
 e = time.perf_counter()
 print('time:', e-s)
+
+# Metric	     Value
+# Time (Best)	 O(n)
+# Time (Average) O(n²)
+# Time (Worst)	 O(n²)
+# Space          O(1)
