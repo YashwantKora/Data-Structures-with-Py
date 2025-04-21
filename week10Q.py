@@ -6,6 +6,7 @@ class queue:
 
     def enqueue(self, value):
         self.queue_ds.append(value)
+
         if self.front == -1:
             self.front += 1
             self.rear += 1
@@ -21,7 +22,8 @@ class queue:
         else:
             temp = self.queue_ds.pop(self.front)
             self.rear -= 1
-            print("Delete item:", temp)
+            print("Deleted item:", temp)
+
             if len(self.queue_ds) == 0:
                 self.front = -1
                 self.rear = -1
@@ -31,6 +33,7 @@ class queue:
         if len(self.queue_ds) == 0:
             print("Queue is empty")
             return
+        
         print("The Queue")
         if self.front == self.rear:
             print(self.queue_ds[self.front], "<-FRONT,<-REAR")
@@ -38,6 +41,7 @@ class queue:
         print(self.queue_ds[self.front], "<-FRONT")
         i = self.front + 1
         while i < self.rear:
+
             print(self.queue_ds[i])
             i += 1
         print(self.queue_ds[self.rear], "<-REAR")   
