@@ -1,12 +1,11 @@
 #13 Implement Singly Linked List (traversing nodes, searching, prepending, removing nodes).
 
-
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
 
-class LinkedList:
+class LL:
     def __init__(self):
         self.head = None
     
@@ -35,17 +34,17 @@ class LinkedList:
             print(str(temp.data) + " ", end="")
             temp = temp.next
 
-if __name__ == '__main__':
-    LL = LinkedList()
-    n = Node(1)
-    LL.head = n
-    n1 = Node(2)
-    n.next = n1
 
-    LL.insert_at_beginning(10)
-    LL.insert_at_beginning(20)
-    print("LL")
-    LL.printList()
-    print("|")
-    LL.delete_beginning()
-    LL.printList()
+LL = LL()
+n = Node(1)
+LL.head = n
+n1 = Node(2)
+n.next = n1
+
+LL.insert_at_beginning(10)
+LL.insert_at_beginning(20)
+print("LL")
+LL.printList()
+print("|")
+LL.delete_beginning()
+LL.printList()
