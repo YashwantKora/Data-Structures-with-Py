@@ -1,23 +1,21 @@
 # class Node:
 #     def __init__(self, data):
 #         self.data = data
-#         self.next = None
+#         self.next = next
 
-# class LL:
-#     def __init__(self):
 #         self.head = None
 
 #     def insert_at_beginning(self, new_data):
-#         new_node = Node(new_data)
-#         new_node.next = self.head
-#         self.head = new_node
+#          new_node = Node(new_data)
+#          new_node.next = self.head
+#          self.head = new_node 
 
 #     def delete_at_beginning(self):
 #         if self.head is None:
-#             print("Linked List is empty!")
+#             print("SLL IS EMPTY")
 #         else:
-#             self.head = self.head.next
-
+#              self.head = self.head.next
+    
 #     def search(self, key):
 #         temp = self.head
 #         while temp is not None:
@@ -32,7 +30,46 @@
 #             print(temp.data)
 #             temp = temp.next
 
-# 
+# LL = LL()
+# n = Node(5)
+# LL.head = n
+# n1 = Node(8)
+# n.next = n1
+
+# LL.insert_at_beginning(10)
+# LL.insert_at_beginning(20)
+# #LL.insert_at_end(30)
+# print("LL")
+# LL.print()
+# print("|")
+# LL.delete_at_beginning()
+# LL.print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class Node:
     def __init__(self, data):

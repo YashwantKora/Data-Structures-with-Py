@@ -101,7 +101,7 @@ class LinknkedList:
 
 if __name__ == '__main__':
     LL = LinknkedList()
-    n = Node(1)
+    n = Node(1)Read 
     LL.head = n
     n1 = Node(2)
     n.next = n1
