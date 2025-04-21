@@ -1,3 +1,5 @@
+#4 Implement Linear Search, compute space and time complexities, plot graph using asymptotic notations
+
 import time
 
 s = time.perf_counter()
@@ -31,3 +33,7 @@ plt.xlabel('number of inputs')
 plt.ylabel('time')
 plt.title("LINEAR SEARCH TIME COMPLEXITY")
 plt.show()
+
+#      Time     Space 
+# Best:  O(1)   O(1)
+# Worst: O(n)	O(1)
