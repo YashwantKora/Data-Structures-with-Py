@@ -6,7 +6,7 @@ print(graph)
 
 def BFS(graph,source):
     Q = Queue()
-    visited_vertices = list()
+    visited_vertices = []
 
     Q.put(source)
     visited_vertices.append(source)
